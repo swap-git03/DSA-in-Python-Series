@@ -69,3 +69,11 @@ elif (num2 > num1 and num2 < num3) or (num2 < num1 and num2 > num3):
 
 else:
     print(f"{num3} is second largest")
+
+# Q8: Take a year from the user and print "Leap Year" if it is a leap year otherwise print "Not Leap Year".
+
+year = int(input("Enter year"))
+if (year%4==0 and year%100!=0) or (year%400==0):
+  print('Year is leap year')
+else:
+  print("not a leap year")
