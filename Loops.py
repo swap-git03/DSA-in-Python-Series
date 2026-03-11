@@ -8,3 +8,10 @@ for i in range(1,n):
 number = int(input("NEter your nukmber"))
 for i in range(1,11):
    print(number*i)
+
+# Q12: Take a number from the user and print the factorial of that number using a loop.
+n = int(input("Enter your number"))
+fact = 1
+for i in range(1, n+1):
+  fact *= i
+  print(fact)
