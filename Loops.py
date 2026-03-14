@@ -43,3 +43,16 @@ n = int(input("Enter number: "))
 for i in range(n, n+1):
   square = n**2
   print(square)
+
+# Q17: Take a number and check if it is a palindrome number using loops.
+n = int(input("Enter number: "))
+temp = number
+rev = 0
+while n > 0:
+  digit = n%10
+  rev = rev * 10 + digit
+  n = n//10
+if temp == rev:
+  print('Number is palindrome')
+else:
+  print('Number is not a palindrome')
