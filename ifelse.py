@@ -14,7 +14,7 @@ if (num1>num2):
 else:
   print(f"{num2}>{num1}")
 
-  from typing import AsyncGenerator
+  
 # Q3: Take age as input and print "Eligible to vote" if age is 18 or more otherwise print "Not eligible".
 age = int(input("Enter your age"))
 if (age>=18):
@@ -55,8 +55,8 @@ elif (marks>=50):
 else:
   print("you got failed😒")
 
-# Q7: Take three numbers from the user and print the second largest number.
 
+# Q7: Take three numbers from the user and print the second largest number.
 num1 = float(input("Enter 1st number"))
 num2 = float(input("Enter 2nd number"))
 num3 = float(input("Enter 3rd number"))
@@ -70,10 +70,22 @@ elif (num2 > num1 and num2 < num3) or (num2 < num1 and num2 > num3):
 else:
     print(f"{num3} is second largest")
 
-# Q8: Take a year from the user and print "Leap Year" if it is a leap year otherwise print "Not Leap Year".
 
+# Q8: Take a year from the user and print "Leap Year" if it is a leap year otherwise print "Not Leap Year".
 year = int(input("Enter year"))
 if (year%4==0 and year%100!=0) or (year%400==0):
   print('Year is leap year')
 else:
   print("not a leap year")
+
+# Q9: Take a purchase amount and apply discount rules: amount>=5000 → 20% discount, amount>=2000 → 10% discount, otherwise no discount and print final price.
+amount = float(input("Enter purchase amount"))
+discount = 0
+if (amount>=5000):
+  discount = amount*0.20
+  amount = amount - discount
+  print(amount)
+elif(amount>=2000):
+  print()
+else:
+  (f'No discount on amount {amount}')

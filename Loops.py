@@ -5,7 +5,7 @@ for i in range(1,n):
 
 
 # Q11: Take a number from the user and print the multiplication table of that number from 1 to 10.
-number = int(input("NEter your nukmber"))
+number = int(input("NEter your number"))
 for i in range(1,11):
    print(number*i)
 
@@ -15,10 +15,27 @@ fact = 1
 for i in range(1, n+1):
   fact *= i
   print(fact)
+
+# Q13: Take a number from the user and print the sum of its digits using a loop.
+n = int(input("Enter your number"))
+sum = 0
+for i in range(1, n+1):
+  sum += i
+  print(sum)
   
-# Q13: Take a number from the user and print the reverse of that number using a loop.
+# Q14: Take a number from the user and print the reverse of that number using a loop.
 
 n = int(input("Enter your number"))
 for i in range(1, n+1):
   rev = n-i
   print(rev)
+
+# Q15: Take a number and count how many digits it has using a loop.
+
+n = input("Enter number: ")
+count = 0
+
+for i in n:
+    count += 1
+
+print(count)
