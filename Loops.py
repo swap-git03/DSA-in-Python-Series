@@ -16,4 +16,9 @@ for i in range(1, n+1):
   fact *= i
   print(fact)
   
-  
+# Q13: Take a number from the user and print the reverse of that number using a loop.
+
+n = int(input("Enter your number"))
+for i in range(1, n+1):
+  rev = n-i
+  print(rev)
