@@ -7,3 +7,12 @@ if rev == word:
 else :
     print('no pali')
 
+# 1️⃣ Reverse a String (without slicing)
+ 
+word = input('ENter your string')
+rev = ""
+ 
+for i in word:
+     rev = i + rev
+print(rev)
+     
