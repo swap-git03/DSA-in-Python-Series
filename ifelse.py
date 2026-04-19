@@ -111,7 +111,7 @@ elif num > 0 and num % 2 != 0 :
 else :
     print(f"{num} is negative")
 
-# Q3: Take three numbers and print the largest among them using nested if.
+# Q11: Take three numbers and print the largest among them using nested if.
 n1, n2, n3 = map(int, input('Enter 3 numbers: ').split())
 
 if n1 > n2 :
@@ -124,3 +124,17 @@ else :
         print(f"{n2} is greatest")
     else : 
         print(f"{n3} is greatest")
+
+
+# Q12: Take a year and check if it is a leap year using nested if.
+
+if year % 4 == 0:
+    if year % 100 != 0:
+        print("Leap year")
+    else:
+        if year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not a leap year")
+else:
+    print("Not a leap year")
