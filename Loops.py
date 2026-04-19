@@ -66,6 +66,7 @@ if temp == rev:
 else:
   print('Number is not a palindrome')
 
+# new pract
 # Q6: Take a number N and print the sum of numbers from 1 to N using a for loop.
 
 n = int(input("Enter a number : "))
