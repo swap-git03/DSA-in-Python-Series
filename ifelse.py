@@ -89,3 +89,14 @@ elif(amount>=2000):
   print()
 else:
   (f'No discount on amount {amount}')
+
+
+
+  # Q9: Take a number from the user and print "Positive" if it is greater than 0 otherwise print "Non-positive".
+
+num = int(input('ENTER YOUR NUMBER'));
+
+if num > 0 :
+    print(f'{num}POSITIVE')
+else :
+    print(f'{num} is negative')
