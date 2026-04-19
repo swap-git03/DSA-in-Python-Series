@@ -1,10 +1,13 @@
 # for i in range(start, stop, step):
     # code
 
-# Q10: Take a number N from the user and print numbers from 1 to N using a loop.
-n = int(input("Enter a number"))
-for i in range(1,n):
-  print(i)
+# Q10: Take a number N and print numbers from 1 to N using a for loop.
+
+n = int(input('enter your number : '))
+
+for i in range (1, n+1):
+    print(i);
+
 
 
 # Q11: Take a number from the user and print the multiplication table of that number from 1 to 10.
