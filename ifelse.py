@@ -110,3 +110,17 @@ elif num > 0 and num % 2 != 0 :
     print (f"{num} is odd positive")
 else :
     print(f"{num} is negative")
+
+# Q3: Take three numbers and print the largest among them using nested if.
+n1, n2, n3 = map(int, input('Enter 3 numbers: ').split())
+
+if n1 > n2 :
+    if n1 > n3 :
+        print(f"{n1} is greatest")
+    else : 
+        print(f"{n3} is greatest")
+else :
+    if n2 > n3 :
+        print(f"{n2} is greatest")
+    else : 
+        print(f"{n3} is greatest")
