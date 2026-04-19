@@ -100,3 +100,13 @@ if num > 0 :
     print(f'{num}POSITIVE')
 else :
     print(f'{num} is negative')
+
+# Q10: Take a number and print "Even Positive", "Odd Positive", or "Non-positive".
+num = int(input("Enter your number : "))
+
+if (num > 0 and num % 2 == 0) :
+    print(f"{num} is even positive")
+elif num > 0 and num % 2 != 0 :
+    print (f"{num} is odd positive")
+else :
+    print(f"{num} is negative")
