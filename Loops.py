@@ -1,3 +1,6 @@
+# for i in range(start, stop, step):
+    # code
+
 # Q10: Take a number N from the user and print numbers from 1 to N using a loop.
 n = int(input("Enter a number"))
 for i in range(1,n):
@@ -44,6 +47,9 @@ for i in range(n, n+1):
   square = n**2
   print(square)
 
+
+# while num > 0:
+#     num = num // 10
 # Q17: Take a number and check if it is a palindrome number using loops.
 n = int(input("Enter number: "))
 temp = number
