@@ -74,3 +74,11 @@ sum = 0;
 for i in range(1, n+1):
     sum = sum + i
 print(sum);
+
+# Q7: Take a number N and print the factorial of N using a for loop.
+
+n = int(input('Enter n : '))
+fact = 1;
+for i in range(1, n+1):
+    fact *= i
+print(fact)
