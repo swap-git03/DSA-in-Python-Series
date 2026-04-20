@@ -83,11 +83,21 @@ for i in range(1, n+1):
     fact *= i
 print(fact)
 
+
 # Q8: Take a number and print the sum of its digits using a while loop.
 n = int(input('Enter n : '))
-sum = 0;
+sum = 0
 while n > 0 :
-    last_digit = n % 10 
-    sum = sum + last_digit
-    n = n // 10
+    digit = n % 10
+    sum = sum + digit
+    n =  n // 10
 print(sum)
+
+# Q9: Take a number and print the reverse of that number using a while loop.
+n = int(input('Enter a number : '))
+rev = 0
+while n > 0 :
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+print(rev)
