@@ -101,3 +101,25 @@ while n > 0 :
     rev = rev * 10 + digit
     n = n // 10
 print(rev)
+
+# Q10: Take a number and check if it is a palindrome using a while loop.
+temp = number 
+rev = 0 
+while n > 0: 
+  digit = n%10 
+  rev = rev * 10 + digit 
+  n = n//10 
+  if temp == rev: 
+    print('Number is palindrome') 
+  else: print('Number is not a palindrome')
+
+
+# Q11: Take a number and print the product of its digits using a while loop. n = int(input("Enter number: ")) temp = n prod = 1 while n > 0: digit# Q11: Take a number and print the product of its digits using a while loop. 
+n = int(input("Enter number: ")) 
+temp = n
+prod = 1 
+while n > 0: 
+  digit = n%10 
+  prod = prod * digit 
+  n = n//10 
+print(prod)
