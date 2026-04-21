@@ -123,3 +123,12 @@ while n > 0:
   prod = prod * digit 
   n = n//10 
 print(prod)
+
+# Q13: Take a string and count number of vowels using a for looop
+string = input("Enter a word : ")
+count = 0
+
+for ch in string :
+    if ch in "aeiouAEIOU":
+        count = count + 1
+print(count)
