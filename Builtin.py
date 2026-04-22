@@ -26,3 +26,16 @@ float("3.5")  # 3.5
 str(10)       # "10"
 list("abc")   # ['a','b','c']
 
+
+
+# 1.Take a list of numbers from user and print:
+# 1. length
+# 2. maximum
+# 3. minimum
+# 4. sum
+
+nums = list(map(int, input("Enter nums : ").split()))
+print("Lenght of num is",len(nums));
+print("Maximum length of num is", max(nums));
+print("Minimum length of num is", min(nums));
+print("Sum of numbers is", sum(nums));
