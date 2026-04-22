@@ -139,3 +139,13 @@ rev = "";
 for i in string:
     rev = i + rev
 print(rev)
+
+# Q15: Take a string and check if it is a palindrome using a for loop.
+s = input("Enter a string : ")
+rev = "";
+for i in s:
+    rev = i + rev
+if rev == s:
+    print("Is palindrome")
+else :
+    print("Not a palindrome")
