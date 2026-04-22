@@ -132,3 +132,10 @@ for ch in string :
     if ch in "aeiouAEIOU":
         count = count + 1
 print(count)
+
+# Q14: Take a string and print the reverse of that string using a for loop.
+string = input("Enter a word : ")
+rev = "";
+for i in string:
+    rev = i + rev
+print(rev)
