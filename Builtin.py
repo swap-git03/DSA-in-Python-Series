@@ -61,3 +61,26 @@ nums = list(map(int, input("Enter your number : ").split()))
 for i in nums:
     if i % 2 == 0:
         print(i);
+
+
+# Q5: Take a list of numbers and count how many even and odd numbers are present.
+nums = list(map(int, input("Enter your number : ").split()))
+
+even = 0;
+odd = 0;
+for i in nums :
+    if i % 2 == 0 :
+        even = even + 1
+
+    else :
+        odd = odd + 1
+print(f"The odd numbers in given string are {odd}")
+print(f"The even numbers in given string are {even}")
+
+# Q7: Take a list of numbers and print the reverse of the list (without using built-in reverse()).
+nums = list(map(int, input("Enter your number : ").split()))
+# rev = 0;
+
+for i in range(len(nums)-1, -1, -1) :
+    nums[i]
+    print(nums[i], end=" ")
