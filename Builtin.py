@@ -65,7 +65,6 @@ for i in nums:
 
 # Q5: Take a list of numbers and count how many even and odd numbers are present.
 nums = list(map(int, input("Enter your number : ").split()))
-
 even = 0;
 odd = 0;
 for i in nums :
@@ -77,6 +76,14 @@ for i in nums :
 print(f"The odd numbers in given string are {odd}")
 print(f"The even numbers in given string are {even}")
 
+# Q6: Take a list of numbers and print the sum of only even numbers.
+nums = list(map(int, input("Enter your number : ").split()))
+sum = 0;
+for i in nums :
+    if i % 2 == 0 :
+        sum = i + sum
+print(sum)
+
 # Q7: Take a list of numbers and print the reverse of the list (without using built-in reverse()).
 nums = list(map(int, input("Enter your number : ").split()))
 # rev = 0;
@@ -84,3 +91,14 @@ nums = list(map(int, input("Enter your number : ").split()))
 for i in range(len(nums)-1, -1, -1) :
     nums[i]
     print(nums[i], end=" ")
+
+# Q8: Take a list of numbers and print only the unique elements (remove duplicates).
+nums = set(map(int, input("Enter your number : ").split()))
+print(nums)
+# ------------------or--------------------
+nums = list(map(int, input("Enter your number : ").split()))
+unique = []
+for i in nums :
+    if i not in unique:
+        unique.append(i)
+print(unique)
