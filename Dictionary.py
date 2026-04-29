@@ -19,4 +19,5 @@ for i in nums:
     else:
         d[i] = 1
 print(d)
+
         
