@@ -156,3 +156,25 @@ elif num < 0 and num % 2 == 0:
     print("- ve Even")
 else:
     print("-ve Odd")
+
+
+# 1
+#14. Given three numbers a, b, c:
+# Determine if they can form a triangle.
+# If yes:
+#   print "Equilateral", "Isosceles", or "Scalene"
+# If no:
+#   print "Not a triangle"
+
+a = 3
+b = 3
+c = 5
+if (a + b > c) and (b + c > a) and (a + c > b):
+    if a == b == c:
+        print("Equilateral")
+    elif a == b or b == c or a == c:
+        print("Isoscales")
+    elif a != b and b != c and a != c:
+        print("Scalene")
+else:
+    print("Not a triangle")
