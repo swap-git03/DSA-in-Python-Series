@@ -30,3 +30,25 @@ def evenodd(a):
         return "Odd"
 n = int(input("enter num: "))
 print(evenodd(n))
+
+# Q3 Create a function that takes two numbers
+# and returns the greater number
+def greater(a, b):
+    if a > b:
+        return a;
+    else:
+        return b;
+        
+print(greater(5, 8))
+
+# Q3 Create a function that takes 3 numbers
+# and returns the largest among them
+
+def greatest(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+print(greatest(5, 4, 2))
