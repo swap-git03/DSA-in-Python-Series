@@ -8,3 +8,25 @@
 #     print("Hello", name)
 # Call:
 # greet("Rahul")
+
+# Q1 ] Create a function that takes a number
+# and prints its square
+
+def square(a):
+    return a * a
+user_input = int(input("Enter a num: "))
+print(square(user_input))
+
+
+# Q2 Create a function that takes a number
+# and RETURNS:
+# "Even" if even
+# "Odd" if odd
+
+def evenodd(a):
+    if a % 2 == 0:
+        return "even"
+    else:
+        return "Odd"
+n = int(input("enter num: "))
+print(evenodd(n))
