@@ -127,3 +127,21 @@ if s == rev:
     print("Palindrome")
 else:
     print("Not Palindrome")
+
+
+# Print numbers from 1 to N
+# - skip numbers divisible by 3
+# - print "Five" for multiples of 5
+# - stop if divisible by 7
+
+n = int(input("Enter number: "))
+
+for i in range(1, n+1):
+    if i % 7 == 0:
+        break;
+    elif i % 3 == 0:
+        continue
+    elif i % 5 == 0:
+        print("Five")
+    else:
+        print(i)
