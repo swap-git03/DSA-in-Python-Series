@@ -138,3 +138,21 @@ if year % 4 == 0:
             print("Not a leap year")
 else:
     print("Not a leap year")
+
+# Q13. Take a number and print:
+# 1. "Positive Even"
+# 2. "Positive Odd"
+# 3. "Negative Even"
+# 4. "Negative Odd"
+# 5. "Zero"
+num = int(input("Enter a number : "))
+if num == 0:
+    print("Zero")
+elif num > 0 and num % 2 == 0:
+    print("positive Even")
+elif num > 0 and num % 2 != 0:
+    print("positive oddOdd")
+elif num < 0 and num % 2 == 0:
+    print("- ve Even")
+else:
+    print("-ve Odd")
