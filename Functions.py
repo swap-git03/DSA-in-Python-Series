@@ -52,3 +52,61 @@ def greatest(a, b, c):
     else:
         return c
 print(greatest(5, 4, 2))
+
+# Q4 Create a function that takes a number
+# and returns the sum of its digits
+
+def sum(a):
+    total = 0
+    while a > 0:
+        digit = a % 10
+        total += digit
+        a //= 10
+    return total
+num = int(input("Enter number: "))
+print(sum(num))
+
+
+# Q5 Create a function that takes a number
+# and returns True if it is palindrome
+# else False
+
+def palindrome(a):
+    rev = 0
+    temp = a
+    while a > 0:
+        digit = a % 10
+        rev = rev * 10 + digit
+        a= a // 10
+    if temp == rev:
+        return True
+    else:
+        return False
+
+print(palindrome(451))
+
+# Q6 Create a function that takes a number
+# and returns count of digits in that number
+
+def count(a):
+    count = 0
+    while a > 0:
+        digit = a % 10
+        a = a // 10
+        count +=1
+    return count
+print(count(451))
+
+
+# Create a function that takes a number
+# and returns the sum of EVEN digits only
+def even_digits(a):
+    total = 0
+    while a > 0:
+        digit = a % 10
+        if  digit % 2 ==0:
+            total += digit
+        a = a // 10
+
+    return total
+print(even_digits(4584))
