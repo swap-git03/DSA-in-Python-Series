@@ -147,5 +147,5 @@ for i in range(1, n+1):
         print(i)
 
 
-#for loop is used when you know number of iterations are known before you start the loop
-#while loop is used when you know end condition
+# for loop is used when you know number of iterations are known before you start the loop
+# while loop is used when you know end condition
