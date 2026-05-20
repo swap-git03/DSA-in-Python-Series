@@ -145,3 +145,7 @@ for i in range(1, n+1):
         print("Five")
     else:
         print(i)
+
+
+#for loop is used when you know number of iterations are known before you start the loop
+#while loop is used when you know end condition
