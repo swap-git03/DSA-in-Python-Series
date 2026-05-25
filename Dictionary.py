@@ -1,23 +1,12 @@
-# Q1: Take a string and count frequency of each character using dictionary
 
-s = input("Enter string: ")
+# Take a list of numbers  
+# Count frequency of each number
+
+num = list(map(int, input().split()))
 d = {}
-for ch in s:
-    if ch in d:
-        d[ch] += 1
-    else:
-        d[ch] = 1
-print(d);
-
-
-#2: Take a list of numbers and count frequency of each number using dictionary.
-nums = list(map(int, input("Enter your number : ").split()))
-d = {}
-for i in nums:
+for i in num:
     if i in d:
-        d[i] = d[i] + 1
+        d[i] +=1
     else:
         d[i] = 1
 print(d)
-
-        
