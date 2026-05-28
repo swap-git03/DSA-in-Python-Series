@@ -39,3 +39,45 @@ mark3 = int(input('Enter mark3'))
 total_marks = mark1+ mark2+ mark3
 avg_marks = (mark1+ mark2+ mark3)/3
 print(f"Total marks are {total_marks}, Average marks are {avg_marks}")
+
+
+# ◆ Intermediate
+# 6. Take temperature in Celsius and convert it to both Fahrenheit and Kelvin.
+celcius = int(input('Enter temp in celcius : '))
+fahrenheit = (celcius * 9/5) + 32  
+Kelvin = celcius + 273.15
+print(f"Temp in fahrenheit{fahrenheit}")
+print(f"Temp in Kelvin{Kelvin}")
+
+# 7. Input a number and print whether it is positive, negative, or zero — without using if-else.
+num = int(input('Enter a number: '))
+result = ["negative", "zero", "positive"][(num > 0) - (num < 0) + 1]
+print(result)
+
+
+# 8. Take two numbers and swap them without using a third variable, then print.
+num1 = int(input('Enter num 1'))
+num2 = int(input('Enter num 2'))
+num1, num2 = num2,num1
+print(f"first number{num1}, sec number{num2}")
+
+a = a + b  
+b = a - b  
+a = a - b
+
+
+# 9. Input your full name (first + last) in one line, split it, print first and last separately.
+name = input("Enter your full name : ")
+splitted = name.split()
+print(splitted[0])
+print(splitted[1])
+
+
+# 10. Input a number and print its square, cube, and square root formatted to 2 decimal places.
+num = int(input("Enter a number"))
+square = num * num
+print(f"Square is {square:.2f}")
+cube = square * num
+print(f"Cube is {cube:.2f}")
+square_root = num ** 0.5
+print(f"square root is {square_root:.2f}")
