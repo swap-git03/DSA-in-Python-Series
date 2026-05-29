@@ -62,18 +62,16 @@ print(rev)
 
 # Q8: Palindrome number ❌ (your version had wrong variables + indentation)
 n = int(input("Enter number: "))
-temp = n
 rev = 0
-
+temp = n
 while n > 0:
     digit = n % 10
     rev = rev * 10 + digit
-    n //= 10
-
+    n = n // 10
 if temp == rev:
-    print("Palindrome")
+    print('IS Palindrom')
 else:
-    print("Not Palindrome")
+    print('Not a palindrome')
 
 
 # Q9: Count digits
@@ -149,3 +147,42 @@ for i in range(1, n+1):
 
 # for loop is used when you know number of iterations are known before you start the loop
 # while loop is used when you know end condition
+
+
+# ◆ Beginner
+#conditionalls from placement prep series
+# 21. Print numbers 1 to 100 using a loop.
+for i in range(1, 101):
+    print(i)
+
+
+# 22. Print all even numbers between 1 and 50.
+for i in range(2, 51, 2):
+    print(i)
+
+# 23. Print the multiplication table of any user-inputted number.
+n = int(input("Enter number: "))
+for i in range(1, 11):
+    print(i*n)
+
+# 24. Find the sum of all digits in a number (e.g., 1234 → 10).
+n = int(input("Enter number: "))
+sum = 0
+while n>0:
+    digit = n % 10
+    sum += digit
+    n = n//10
+print(sum)
+
+# 25. Count how many times digit 7 appears in a given number
+n = int(input("Enter number: "))
+seven = 0;
+while n>0:
+    digit = n % 10
+    if digit ==7:
+        seven += 1
+    n = n//10
+print(seven)
+
+
+#  Intermediate

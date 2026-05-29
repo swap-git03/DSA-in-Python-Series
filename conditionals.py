@@ -44,3 +44,43 @@ if (num % 3 == 0) and (num % 5 == 0):
     print(f"{num}Divisible by 3 and 5")
 else:
     print(f"{num}NOT Divisible by 3 and 5")
+
+
+# 16. Input three sides of a triangle; check if it's valid, then classify it (equilateral / isosceles /
+# scalene).
+a = int(input('Enter first side: '))
+b = int(input('Enter second side: '))
+c = int(input('Enter third side: '))
+if (a+b>c) and (b+c>a) and (a+c>b):
+    if a==b==c:
+        print('Equilateral Triangle')
+    elif (a==b) or (b==c) or (a==c):
+        print('Isosceles Triangle')
+    else:
+        print('Scalene Triangle')
+else:
+    print("Not a triangle")
+
+# 17. Build a simple calculator: input two numbers and operator (+, -, *, /), print result.
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter second number: '))
+operator = input("Enter operator (+, -, *, /): ")
+if operator == "+":
+    print(num1+num2)
+if operator == "-":
+    print(num1-num2)
+if operator == "*":
+    print(num1*num2)
+if operator == "/":
+    print(num1/num2)
+
+# 18. Input a character; check if it's a vowel, consonant, digit, or special character.
+char = input("Enter a character : ")
+if char in "aeiouAEIOU": 
+    print("Character is vowel")
+elif char.isalpha():
+    print("Character is consonent")
+elif char.isdigit():
+    print("Character is digit")
+else:
+    print("Character is special")
