@@ -186,3 +186,25 @@ print(seven)
 
 
 #  Intermediate
+
+# 27. Reverse a number without converting it to a string (e.g., 1234 → 4321).
+n = int(input("Enter number: "))
+rev = 0
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n  = n //10
+print(rev)
+
+# 28. Check if a number is a palindrome using a loop.
+n = int(input("Enter number: "))
+rev = 0
+temp = n
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+if temp == rev:
+    print('IS Palindrom')
+else:
+    print('Not a palindrome')
