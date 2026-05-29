@@ -186,7 +186,6 @@ print(seven)
 
 
 #  Intermediate
-
 # 27. Reverse a number without converting it to a string (e.g., 1234 → 4321).
 n = int(input("Enter number: "))
 rev = 0
@@ -208,3 +207,29 @@ if temp == rev:
     print('IS Palindrom')
 else:
     print('Not a palindrome')
+
+# 29. Print the Fibonacci sequence up to N terms.
+n = int(input("Enter number: "))
+a = 0
+b = 1
+for i in range(n):
+    print(a)
+    next = a+b
+    a = b
+    b = next
+
+
+
+
+
+
+
+
+    
+# 26. Print all prime numbers between 1 and 100.
+# 30. Find the factorial of a number using a loop.
+# 31. Print a right-angled star pattern of N rows.
+# 32. Print a number pyramid (1 / 1 2 / 1 2 3 …).
+# 33. Find the GCD of two numbers using a loop.
+# 34. Find all Armstrong numbers up to 1000 (sum of cubes of digits equals the number).
+# 35. FizzBuzz: print 1–100, replace multiples of 3 with Fizz, 5 with Buzz, both with FizzBuzz
