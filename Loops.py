@@ -242,6 +242,10 @@ for i in range(1, n+1):
     facto = facto * i
 print(facto)
 
+# 31. Print a right-angled star pattern of N rows.
+n = int(input("Enter number: "))
+for i in range(1, n+1):
+    print("X" * i)
 
 
 
