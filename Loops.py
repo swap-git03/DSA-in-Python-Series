@@ -247,7 +247,53 @@ n = int(input("Enter number: "))
 for i in range(1, n+1):
     print("X" * i)
 
+# 32. Print a number pyramid (1 / 1 2 / 1 2 3 …).
+n = 3
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()
 
+
+# 32. Print a number pyramid (1 / 1 2 / 1 2 3 …).
+n = 3
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()
 
 
     
+# 33. Find the GCD of two numbers using a loop.
+n1 = int(input("Enter number 1: "))
+n2 = int(input("Enter number 2: "))
+gcd = 1
+for i in range(1, min(n1, n2)+1):
+    if (n1 % i ==0) and (n2 % i ==0):
+        gcd = i
+print(gcd)
+
+# 34. Find all Armstrong numbers up to 1000 (sum of cubes of digits equals the number).
+for num in range(1,1000):
+    total_sum = 0
+    temp = num
+    
+    while temp > 0:
+        digits = temp%10
+        total_sum += digits ** 3
+        temp = temp//10
+        
+    if total_sum == num:
+        print(num)
+
+
+# 35. FizzBuzz: print 1–100, replace multiples of 3 with Fizz, 5 with Buzz, both with FizzBuzz
+for n in range(1,101):
+    if n % 3 == 0 and n % 5 == 0:
+        print(f'{n} is FizzBuzz')
+    elif n % 3 == 0:
+        print(f'{n} is Fizz')
+    elif n % 5 == 0:
+        print(f'{n} is Buzz')
+    else:
+        print(n)
