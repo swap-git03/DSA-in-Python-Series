@@ -93,3 +93,18 @@ for i in words:
     result += rev + " "
 
 print(result)
+
+
+# 52. Check if a string contains only digits, only alphabets, or is mixed.
+word = (input('Enter a full sentence : '))
+alphabet_flag = False
+digit_flag = False
+special_flag = False
+for i in word:
+    if i.isalpha():
+        alphabet_flag = True
+    elif i.isdigit():
+        digit_flag = True
+    else:
+        special_flag = True
+print(alphabet_flag,digit_flag,special_flag)
