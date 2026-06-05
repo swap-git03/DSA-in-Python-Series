@@ -108,3 +108,12 @@ for i in word:
     else:
         special_flag = True
 print(alphabet_flag,digit_flag,special_flag)
+
+
+# 53. Remove duplicate characters from a string while preserving order.
+word = (input('Enter a full sentence : '))
+new_word = ''
+for i in word:
+    if i not in new_word:
+        new_word += i
+print(new_word)
