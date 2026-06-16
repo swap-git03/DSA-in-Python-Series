@@ -307,3 +307,25 @@ for i in range(1, 6):
 for j in range(4, 0, -1):
     print(" " * (5-j), end='')
     print("*"*(2*j-1))
+
+# 37. Find all perfect numbers between 1 and 10000.
+
+for i in range(1, 10001,1):
+    perfect = 0
+    for j in range(1, i//2 + 1):
+        if i%j==0:
+            perfect += j   
+    if perfect == i:
+        print(i)
+        
+
+# 40. Generate all prime factors of a given number.
+n = int(input())
+i = 2
+
+while n > 1:
+    if n % i ==0:
+        print(i)
+        n = n // i
+    else:
+        i = i+1
