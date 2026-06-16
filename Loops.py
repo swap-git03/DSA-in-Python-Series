@@ -60,7 +60,7 @@ while n > 0:
 print(rev)
 
 
-# Q8: Palindrome number ❌ (your version had wrong variables + indentation)
+# Q8: Palindrome number 
 n = int(input("Enter number: "))
 rev = 0
 temp = n
