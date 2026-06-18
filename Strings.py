@@ -38,3 +38,12 @@ print(len(words))
 
 # ◆ Intermediate
 # 46. Count the frequency of each character in a string.
+stri = input("Enter string : ")
+d = {}
+for i in stri:
+    if i in d:
+        d[i] += 1
+    else:
+        d[i] = 1
+print(d)
+# 47. Remove a
