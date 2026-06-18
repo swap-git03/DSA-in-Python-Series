@@ -47,3 +47,43 @@ for i in stri:
         d[i] = 1
 print(d)
 # 47. Remove a
+
+# 47. Remove all spaces from a string.
+str1 = input("Enter string : ")
+str2 = ""
+for i in str1:
+    if i != " ":
+        str2 += i 
+print(str2)
+
+# 48. Replace all vowels in a string with *.
+str1 = input("Enter string : ")
+vow = ['a','e','i','o','u']
+str2 = ""
+for i in str1:
+    if i in vow:
+        str2 += "*"
+    else:
+        str2 += i
+print(str2)
+
+
+# 49. Check if two strings are anagrams of each other.
+str1 = input("Enter String 1 : ")
+str2 = input("Enter String 2 : ")
+d1 = {}
+d2 = {}
+for i in str1:
+    if i in d1:
+        d1[i] +=1
+    else:
+        d1[i] = 1
+for i in str2:
+    if i in d2:
+        d2[i] +=1
+    else:
+        d2[i] = 1
+if d1 == d2:
+    print('Are Anagram')
+else:
+    print('Not an anagram')
