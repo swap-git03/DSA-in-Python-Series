@@ -87,3 +87,12 @@ if d1 == d2:
     print('Are Anagram')
 else:
     print('Not an anagram')
+
+
+# 50. Check whether a substring is present in a string.
+text = input("Enter main string : ")
+substring = input("Enter substring to search : ")
+if substring in text:
+    print("Substring found")
+else:
+    print("Substring not found")
