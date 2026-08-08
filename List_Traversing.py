@@ -82,3 +82,40 @@ for i in num:
         odd +=1
 print(f"even nums are {even}")
 print(f"odd nums are {odd}")
+
+num = [40, 10, 30, 20, 30, 50, 20,30]
+# Q1Find how many times 20 occurs.
+x = num.count(20)
+print(x)
+# Q2Find the first index of 30.
+a=num.index(30)
+print(a)
+
+# Q3Sort the list ascending.
+num.sort()
+print(num)
+# Q4Now sort it descending.
+num.sort(reverse=True)
+print(num)
+# Q5Reverse this list:
+a = [10, 50, 20, 40, 30]
+a.reverse()
+print(a)
+print(60 in num)
+# Q7Create a copy of num called backup.
+backup=num.copy()
+print(backup)
+# Q8Clear backup and print both backup and num.
+backup.clear()
+print(backup)
+print(num)
+# Q9Find the length of num.
+length = len(num)
+print(length)
+# Q10Without using count(), count how many times 30 appears using a loop.
+num = [40, 10, 30, 20, 30, 50, 20,30]
+count=0
+for i in num:
+    if i ==  30:
+        count +=1
+print(count)
