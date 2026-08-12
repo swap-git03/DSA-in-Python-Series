@@ -24,3 +24,20 @@ print(count)
 t = (10, 20, 30, 20, 40, 20)
 # Q5 Find the first index of 30.
 print(t.index(30))
+
+# Q7 Create a single-element tuple containing 50.
+single= (50,)
+print(single)
+
+# Q8 Convert:
+# [10, 20, 30] into a tuple.
+mylist=[10,20,30]
+mytuple = tuple(mylist)
+print(mytuple)
+
+
+# Q9Convert:(10, 20, 30)
+# into a list.
+mytuple=(10,20,30)
+mylist=list(mytuple)
+print(mylist)
