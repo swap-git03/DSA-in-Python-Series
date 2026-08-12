@@ -3,12 +3,9 @@ num = (10,20,30,40)
 
 # Print the first and last element.
 print(num[0], num[-1])
-
-
 # Q2 Print: 30 using indexing.
 print(num[2])
 
-# Q1 Create: (10, 20, 30, 40, 50,20)
 num2 = (10, 20, 30, 40, 50,20)
 # Q3 Print the last three elements using slicing.
 print(num2[-3:])
@@ -41,3 +38,17 @@ print(mytuple)
 mytuple=(10,20,30)
 mylist=list(mytuple)
 print(mylist)
+
+
+# Q10 point = (10, 20)
+# Unpack it into x and y, then print both.
+point = (10,20)
+x, y = point
+print(x, y)
+
+
+# Q12 student = ("Rahul", 22, "BDA")
+# Unpack into name, age, course.
+student = ("swap", 22, "BDA")
+name, age, course = student
+print(student)
