@@ -3,5 +3,24 @@ num = (10,20,30,40)
 
 # Print the first and last element.
 print(num[0], num[-1])
+
+
 # Q2 Print: 30 using indexing.
 print(num[2])
+
+# Q1 Create: (10, 20, 30, 40, 50,20)
+num2 = (10, 20, 30, 40, 50,20)
+# Q3 Print the last three elements using slicing.
+print(num2[-3:])
+# Q4 Count how many times 20 occurs:
+count = 0
+for i in num2:
+    if i == 20:
+        count +=1
+print(count)
+
+
+# t = (10, 20, 30, 20, 40, 20)
+t = (10, 20, 30, 20, 40, 20)
+# Q5 Find the first index of 30.
+print(t.index(30))
