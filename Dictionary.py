@@ -110,9 +110,39 @@ print(students["student2"]["name"])
 print(students["student1"]["age"])
 
 # Q10 — Using a loop, print:
-for key, value in students.items():
-    print(key, value["name"])
 # student1 Rahul
 # student2 Amit
+for key, value in students.items():
+    print(key, value["name"])
 
-# This last one is where nested dictionaries + .items() come together.
+
+employees = [
+    {"name": "Raj", "salary": 50000},
+    {"name": "Priya", "salary": 65000},
+    {"name": "Amit", "salary": 45000}
+]
+
+# Q1. Print Priya's salary using indexing + dictionary key.
+print(employees[1]["name"])
+# Q2. Using a loop, print only the employee names.
+for i in employees:
+    print(i["name"])
+# Q3. Using a loop, print names of employees whose salary is greater than 50000.
+for i in employees:
+    if (i["salary"]>50000):
+        print(i["name"])
+# Q4. Calculate the total salary of all employees using a loop.
+total = 0
+for i in employees:
+    total +=i["salary"]
+print(total)
+# Q5. Find the employee with the highest salary without using max().
+highest_salary = 0
+highest_paid_emp = None
+
+for i in employees:
+    if i["salary"] > highest_salary:
+        highest_salary = i["salary"]  # Keep it an integer!
+        highest_paid_emp = i
+
+print(highest_paid_emp)

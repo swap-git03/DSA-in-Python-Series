@@ -110,3 +110,83 @@ def even_digits(a):
 
     return total
 print(even_digits(4584))
+
+# Q1 Create: def show(**kwargs):
+# Print the complete kwargs.
+# Call it with:
+# name="Rahul"
+# age=22
+# course="BDA"
+def show(**kwargs):
+    print(kwargs)
+show(age=22, course="BDA")
+
+
+# Q2 Write a function:
+# student_info(**kwargs)
+# that prints only the student's name.
+
+def student_info(**kwargs):
+    print(kwargs.get("name"))
+
+student_info(name="Rahul", age=22,course = "BDA")
+
+
+# Q3 Write a function that loops through kwargs and prints:
+# name → Rahul
+# age → 22
+# course → BDA
+def student_info(**kwargs):
+    for key,value in kwargs.items():
+        print(key,value)
+student_info(name="Rahul", age=22,course = "BDA")
+
+
+# Q4 Write:
+# def add(*args): and return the sum of all numbers.
+# Test: 10, 20, 30, 40
+def add(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    print(sum)
+
+add(10,20,30,40)
+
+# Q5 — def profile(name, *skills, **details):
+# Call it like:
+
+# profile(
+#     "Rahul",
+#     "Python",
+#     "SQL",
+#     "Spark",
+#     age=22,
+#     city="Mumbai"
+# )
+
+# Inside the function, print:
+
+# name
+# skills
+# details
+
+def profile(name, *skills, **details):
+    print("Name:")
+    print(name)
+    
+    print("\nSkills:")
+    print(skills)
+    
+    print("\nDetails:")
+    print(details)
+
+# Calling the function exactly as requested
+profile(
+    "Rahul",
+    "Python",
+    "SQL",
+    "Spark",
+    age=22,
+    city="Mumbai"
+)
