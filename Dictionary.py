@@ -127,15 +127,19 @@ print(employees[1]["name"])
 # Q2. Using a loop, print only the employee names.
 for i in employees:
     print(i["name"])
+    
 # Q3. Using a loop, print names of employees whose salary is greater than 50000.
 for i in employees:
     if (i["salary"]>50000):
         print(i["name"])
+
+
 # Q4. Calculate the total salary of all employees using a loop.
 total = 0
 for i in employees:
     total +=i["salary"]
 print(total)
+
 # Q5. Find the employee with the highest salary without using max().
 highest_salary = 0
 highest_paid_emp = None
@@ -146,3 +150,48 @@ for i in employees:
         highest_paid_emp = i
 
 print(highest_paid_emp)
+
+employees = [
+    {"name": "Raj", "salary": 50000},
+    {"name": "Priya", "salary": 65000},
+    {"name": "Amit", "salary": 45000}
+]
+# Q1 Sort employees by salary ascending.
+sort_emp = sorted(employees, key=lambda x: x["salary"])
+print(sort_emp)
+# Q2 Sort employees by salary descending.
+sort_emp=sorted(employees, key=lambda x: x["salary"], reverse=True)
+print(sort_emp)
+# Q3 Sort employees alphabetically by name.
+# For Q3, think carefully:key should return what?
+sort_emp = sorted(employees, key=lambda x: x["name"])
+print(sort_emp)
+
+# Q4
+numbers = [1, 2, 3, 4, 5]
+
+# Create a dictionary:
+
+# 1 → 1 # 2 → 4 # 3 → 9
+squares = {x: x*x for x in numbers}
+print(squares)
+
+# Q5 Using dictionary comprehension, create a dictionary containing only even numbers and their squares.
+numbers = [1, 2, 3, 4, 5]
+squares = {x: x*x for x in numbers if x % 2 == 0}
+
+# Q6 # Create:
+
+# Raj   → 3
+# Amit  → 4
+# Priya → 5
+names = ["Raj", "Amit", "Priya"]
+# Create a dictionary mapping name to its length
+name_lengths = {name: len(name) for name in names}
+
+print(name_lengths)
+
+# Q7 — What will this produce?
+
+hi = {x: x*2 for x in range(1, 6)}
+print(hi)
