@@ -64,3 +64,31 @@ def find_first_even_greater(nums, target):
 nums = [11, 15, 22, 25, 30, 41]
 res = find_first_even_greater(nums,20)
 print(res)
+
+# return True if any duplicate exists
+# return False if all elements are unique
+def has_duplicate(nums):
+    seen = set()
+
+    for i in nums:
+        if i in seen:
+            return True
+        else:
+            seen.add(i)
+
+    return False
+
+# "Which is the first duplicate we encounter?"
+def has_duplicate(nums):
+    seen = set()
+
+    for i in nums:
+        if i in seen:
+            return i
+        else:
+            seen.add(i)
+
+    return -1
+nums = [5, 3, 8, 3, 2, 5]
+res=has_duplicate(nums)
+print(res)
