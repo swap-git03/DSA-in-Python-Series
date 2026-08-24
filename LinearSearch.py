@@ -35,8 +35,32 @@ def count_greater(nums, target):
             count +=1
     return count
 
-
-
 nums=[10,20,30,40,50]
 res = count_greater(nums,20)
+print(res)
+
+
+# It should return how many elements are strictly even and greater than target.
+def count_greater(nums, target):
+    count = 0
+    for i in nums:
+        if i%2==0:
+            if i> target:
+                count +=1
+    return count
+
+nums=[10,20,30,41,50]
+res = count_greater(nums,20)
+print(res)
+
+# Given a list of numbers, find the first even number greater than target and return its index. If no such number exists, return -1.
+def find_first_even_greater(nums, target):    
+    for i in range(len(nums)):
+        if nums[i] % 2==0:
+            if nums[i]> target:
+                return i
+    return -1
+
+nums = [11, 15, 22, 25, 30, 41]
+res = find_first_even_greater(nums,20)
 print(res)
