@@ -195,3 +195,27 @@ print(name_lengths)
 
 hi = {x: x*2 for x in range(1, 6)}
 print(hi)
+
+# Find the Most Frequent Element
+def most_freq(nums):
+    freq={}
+    for i in nums:
+        if i in freq:
+            freq[i] +=1
+        else:
+            freq[i]=1
+
+    highest_freq = 0
+    most_frequent = None
+
+    for key, value in freq.items():
+        if value > highest_freq:
+            highest_freq = value
+            most_frequent = key
+
+    return most_frequent
+
+
+nums = [4, 2, 4, 4, 2, 4, 5]
+res= most_freq(nums)
+print(res)
