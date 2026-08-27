@@ -219,3 +219,21 @@ def most_freq(nums):
 nums = [4, 2, 4, 4, 2, 4, 5]
 res= most_freq(nums)
 print(res)
+
+# Find the sec largest Element
+def sec_largest(nums):
+    largest = None
+    sec_largest = None
+    for i in nums:
+        if i > largest:
+            sec_largest = largest
+            largest =i
+        elif i > sec_largest:
+            sec_largest = i
+    return sec_largest
+
+
+
+nums = [10, 25, 7, 40, 30, 40]
+res= sec_largest(nums)
+print(res)
