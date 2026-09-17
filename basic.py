@@ -108,3 +108,40 @@ for m in num:
     m = m * m
     squaredlist.append(m)
 print(f'Square of numbers are {squaredlist}')
+
+
+# Print the tuple.
+# Count how many times 10 occurs.
+# Find the index of 40.
+# Convert the tuple into a set to remove duplicates.
+# Convert the resulting set back into a list.
+# Add 70 to the list.
+# Print the final list in sorted order.
+
+data = (10, 20, 10, 30, 40, 20, 50, 30, 60)
+print(data)
+
+count = 0
+for i in data:
+  if i == 10:
+    count += 1
+print(f'10 occurs {count} times in the tuple')
+
+for j in data:
+  if j == 40:
+    print(f'40 occurs at index of {data.index(j)}')
+
+
+data = (10, 20, 10, 30, 40, 20, 50, 30, 60)
+unique_data = set(data)
+print(unique_data)  
+
+
+noduplicate = []
+for k in data:
+  if k not in noduplicate:
+    noduplicate.append(k)
+print(f'convereted set is {noduplicate}')
+
+noduplicate.append(70)
+print(noduplicate)
