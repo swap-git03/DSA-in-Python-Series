@@ -145,3 +145,48 @@ print(f'convereted set is {noduplicate}')
 
 noduplicate.append(70)
 print(noduplicate)
+
+# The function should:
+# Accept the student's name and any number of marks using *args.
+# Calculate total marks.
+# Calculate average marks.
+# Find the highest mark without max().
+# Find the lowest mark without min().
+# Determine the result:
+# Average >= 40 → "Pass"
+# Otherwise → "Fail"
+# Print all the results clearly.
+
+def student_result(name, *marks):
+  total_marks = sum(marks)
+  avg_marks = total_marks/len(marks)
+
+  highest_marks = marks[0]
+  lowest_marks = marks[0]
+
+  for i in marks:
+    if i > highest_marks:
+      highest_marks=i
+
+  for j in marks:
+    if j < lowest_marks:
+      lowest_marks = j
+
+  if avg_marks>=40:
+    status = "Pass"
+  else:
+    status="Failed"
+
+  print(f"====================================")
+  print(f"       STUDENT REPORT: {name.upper()}")
+  print(f"====================================")
+  print(f"Total Marks Obtained : {total_marks}")
+  print(f"Average Marks        : {avg_marks:.2f}")
+  print(f"Highest Mark         : {highest_marks}")
+  print(f"Lowest Mark          : {lowest_marks}")
+  print(f"Final Status         : {status}")
+  print(f"====================================")
+
+
+student_result("Rahul", 85, 42, 91, 38, 74)
+student_result("Priya", 35, 30, 45, 28)
