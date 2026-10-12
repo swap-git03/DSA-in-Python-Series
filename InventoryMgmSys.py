@@ -20,8 +20,8 @@ def display_inventory():
         print('1. Add Items')
         print('2. View Items')
         print('3. Search Items')
-        print('4. Delete Items')
-        print('5. Update Stock')
+        print('4. Update Items')
+        print('5. Delete Items')
         print('6. Exit')
 
         choice = input("Enter your choice : ")
@@ -64,7 +64,44 @@ def display_inventory():
                     print(f"Product Name : {prod['name']} | Product id {prod['id']}, | Product Price {prod['price']} | Product Quantity {prod['quantity']}")
 
 
+        elif choice == '3':
+            print('Search items Selected')
+            search_id = int(input('Enter product id : '))
 
+            for prod in inventory:
+                if prod['id'] == search_id:
+                    print('Product Found Successfully')
+                    print(f"Product Name : {prod['name']} | Product id {prod['id']}, | Product Price {prod['price']} | Product Quantity {prod['quantity']}")
+                    break
+            else:
+                print('No product found')
+
+
+
+        elif choice == '4':
+            print('Update Product Selected')
+            search_id = int(input('Enter product id : '))
+
+            for prod in inventory:
+                if prod['id'] == search_id:
+                    print('Product Found Successfully')
+                    update_price = int(input('Enter Updated price'))
+                    update_quant = int(input('Enter updated amount'))
+                    prod['price'] = update_price
+                    prod['quantity'] = update_quant 
+                    print('Product Updated SUccessfully.')
+                    break
+            else:
+                print('Noo Product Found')             
+
+
+        elif choice == '5':
+            print("Product Delete Started")
+search_id = int(input('Enter product id : '))
+
+            for prod in inventory:
+                if prod['id'] == search_id:
+                    print('Product Found Successfully')
 
         elif choice == "6":
             print('Exiting the program')
