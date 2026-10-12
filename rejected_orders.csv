@@ -1,0 +1,5 @@
+order_id,customer,amount,status,error_reason
+ORD102,Meera,abc,PAID,invalid literal for int() with base 10: 'abc'
+ORD103,Kabir,-50,PAID,Amount must be positive
+ORD105,Ishaan,0,PAID,Amount must be positive
+ORD107,Vivaan,,PAID,Missing amount
