@@ -101,7 +101,11 @@ def display_inventory():
 
             for prod in inventory:
                 if prod['id'] == search_id:
-                    print('Product Found Successfully')
+                    inventory.remove(prod)
+                    print('Product removed Successfully')
+                    break
+            else:
+                print('Noo Product Found')    
 
         elif choice == "6":
             print('Exiting the program')
