@@ -97,7 +97,7 @@ def display_inventory():
 
         elif choice == '5':
             print("Product Delete Started")
-search_id = int(input('Enter product id : '))
+            search_id = int(input('Enter product id : '))
 
             for prod in inventory:
                 if prod['id'] == search_id:
