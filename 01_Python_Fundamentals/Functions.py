@@ -23,6 +23,7 @@ print(square(user_input))
 # "Even" if even
 # "Odd" if odd
 
+
 def evenodd(a):
     if a % 2 == 0:
         return "even"
